@@ -1,5 +1,6 @@
 pipeline {
-    agent {label 'mkdocs_builder'}
+//    agent {label 'mkdocs_builder'}
+      agent any
 
     stages {
         stage("Pull Git Repository") {
