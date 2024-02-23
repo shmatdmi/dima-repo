@@ -14,7 +14,10 @@ pipeline {
         }
         stage('Развертывание') {
             steps {
-                echo 'Переносим код в рабочую среду или создаем артефакт'
+                     script {
+                    def test = 2 + 2 > 3 ? 'hopefully' : 'unlikely'
+                    echo test
+                }
             }
         }
     }
