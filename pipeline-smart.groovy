@@ -10,8 +10,8 @@ pipeline {
                     sh 'ls -la'
                 }
                 git(
-                    url: "git@github.com:Aredel/git-experiments.git",
-                    branch: "main",
+                    url: "https://github.com/shmatdmi/dima-repo.git",
+                    branch: "develop",
                     changelog: true,
                     poll: true
                 )
