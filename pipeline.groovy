@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Тестирование') {
             steps {
-                echo 'Тестируем нашу сборку'
+                sh java -version
             }
         }
         stage('Развертывание') {
