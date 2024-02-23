@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Тестирование') {
             steps {
-                sh java -version
+                sh jenkins -version
             }
         }
         stage('Развертывание') {
